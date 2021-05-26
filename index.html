@@ -158,12 +158,19 @@
                   <input type="checkbox" name="example_accordion" id="section1" class="accordion__input">
                   <label for="section1" class="accordion__label">I have implemented some websites using Wordpress for some clients.(Click to see!)</label>
                   <div class="accordion__content">
-                    <p>I have implemented some websites using Wordpress for some clients.</p>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sit reiciendis, ipsam quaerat,
-                      aperiam perspiciatis ad ullam architecto impedit natus illo nostrum molestias voluptas earum a
-                      voluptatibus fugiat fuga facere!
-                    </p>
+
+                    <div>
+                        <div class="wordpress-wrapper">
+                            <div class="website">
+                                <img src="images/PAHAN.jpg" alt="wawemedia" class="thumbnail">
+                                <div class="web-preview">
+                                    <h6 class="web-title" >Title</h6>
+                                    <p class="web-intro">This is a sentence</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                   </div>
                 </div>
               </div>        
@@ -178,7 +185,24 @@
 
     <section class="s2">
         <div class="main-container">
-            Contact             
+            <h3 style="text-align:center;">Get In Touch</h3> 
+            
+            <form class="contact-form">
+                <label>Name</label>
+                <input type="text" class="input-field" name="name">
+
+                <label>Subject</label>
+                <input type="text" class="input-field" name="subject">
+
+                <label>Email</label>
+                <input type="text" class="input-field" name="email">
+
+                <label>Message</label>
+                <textarea name="message" cols="30" rows="10" class="input-field"></textarea>
+                
+                <input class="submit-btn" type="submit" value="Send">
+            
+            </form>
         </div>
     </section>
 

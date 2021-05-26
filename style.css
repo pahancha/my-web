@@ -8,6 +8,7 @@
     --themeDotBorder: #24292e;
     --previewBackGround: rgb(251,249,243,0.7);
     --previewShadow: #f0ead6;
+    --buttonColor:black;
 }
 
 html, body{
@@ -350,7 +351,81 @@ button{
   .accordion__input:checked ~ .accordion__label::after {
     transform: translateY(-50%) rotate(0.5turn);
   }
-  
+
+  .wordpress-wrapper{
+      display: grid;
+      grid-template-columns: repeat(auto-fit,320px);
+      gap: 20px;
+      justify-content: center;    
+      /* padding-bottom: ; */
+
+    }
+
+  .thumbnail{
+      display: block;
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+  }
+
+  .website{
+      border: 1px solid var(--borderColor);
+      -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0,0, 75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0,0, 75);
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0,0, 75);
+  }
+
+  .web-preview{
+      background-color: white;
+      padding: 15px;
+  }
+
+  .web-title{
+      color: black;
+      margin: 0;
+  }
+
+  .web-intro{
+      color: #4b5156;
+      font-size: 16px;
+  }
+
+  .contact-form{
+      display: block;
+      max-width: 600px;
+      margin: 0 auto;
+      border: 1px solid var(--borderColor);
+      padding: 15px;
+      border-radius: 5px;
+      background-color: var(--mainColor);
+      margin-bottom: 50px;
+
+  }
+
+  .contact-form label{
+      line-height: 2.7em;
+  }
+
+  .input-field{
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: var(--secondaryColor);
+      border-radius: 5px;
+      border: 1px solid var(--borderColor);
+      font-size: 14px;
+  }
+
+  .submit-btn{
+      color: white;
+      margin-top: 10px;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: var(--buttonColor);
+      border: none;
+  }
+
 @media screen and (max-width: 1200px){
     .main-container{
         width: 95%;
