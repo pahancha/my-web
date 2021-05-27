@@ -9,12 +9,15 @@
     --previewBackGround: rgb(251,249,243,0.7);
     --previewShadow: #f0ead6;
     --buttonColor:black;
+
+    --visitSiteColor: #0080ff;
 }
 
 html, body{
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    transition: 0.8s;
 }
 
 body *{
@@ -47,6 +50,13 @@ h6{ font-size: 16px;
 a{
     text-decoration: none;
     color: #17a2b8;
+}
+
+#visit-link{
+    font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
+    color: var(--visitSiteColor);
+    align-content: center;
 }
 
 p, li, span, label, input, textarea{
@@ -336,8 +346,8 @@ button{
   
   .accordion__content {
     background: #ffffff;
-
     display: none;
+    transition: height 2s;
   }
   
   .accordion__input {
@@ -346,23 +356,27 @@ button{
   
   .accordion__input:checked ~ .accordion__content {
     display: block;
+    transition-timing-function: ease;
+
   }
   
   .accordion__input:checked ~ .accordion__label::after {
     transform: translateY(-50%) rotate(0.5turn);
   }
 
-  .wordpress-wrapper{
+  .box-wrapper{
       display: grid;
       grid-template-columns: repeat(auto-fit,320px);
       gap: 20px;
       justify-content: center;    
-      /* padding-bottom: ; */
+      padding-bottom: 50px;
+      padding-top: 50px;
 
     }
 
+
   .thumbnail{
-      display: block;
+      display: flex;
       width: 100%;
       height: 180px;
       object-fit: cover;
@@ -371,8 +385,8 @@ button{
   .website{
       border: 1px solid var(--borderColor);
       -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0,0, 75);
-    -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0,0, 75);
-    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0,0, 75);
+        -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0,0, 75);
+        box-shadow: -1px 1px 3px -1px rgba(0, 0, 0,0, 75);
   }
 
   .web-preview{
