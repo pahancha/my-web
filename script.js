@@ -1,3 +1,4 @@
+// JS for changing to the dark mode
 let themeDots = document.getElementsByClassName('theme-option')
 
 for(var i=0; themeDots.length > i; i++){
@@ -17,6 +18,7 @@ function setTheme(mode){
     }
 }
 
+// JS for accordion part
 var accordions = document.getElementsByClassName("accordion");
 
 for (var i = 0; i < accordions.length; i++) {

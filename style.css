@@ -11,6 +11,7 @@
     --buttonColor:black;
 
     --visitSiteColor: #0080ff;
+    --accodionHover:#ddd;
 }
 
 html, body{
@@ -71,6 +72,8 @@ button{
     background-color: var(--mainColor);
     border-bottom:1px solid var(--borderColor);
     overflow: auto;
+    padding-bottom: 50px;
+
 }
 .s2{
     background-color: var(--secondaryColor);
@@ -104,8 +107,7 @@ button{
     grid-template-areas: 
         'navigation-wrapper navigation-wrapper'
         'left-column right-column'
-    ;
-    
+    ;    
 }
 
 .navigation-wrapper{
@@ -308,46 +310,38 @@ button{
 /* Dropdown for wordpress sites */
 .accordion-wrapper {
     width: 95%;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 50px auto;
+    background-color: var(--secondaryColor);
   }
   
   button.accordion {
     width: 100%;
-    background-color: whitesmoke;
+    background-color: var(--mainColor);
     border: none;
     outline: none;
     text-align: left;
     padding: 15px 20px;
     font-size: 18px;
-    color: #444;
+    color: var(--mainText);
     cursor: pointer;
     transition: background-color 0.2s linear;
   }
   
-  button.accordion:after {
-    content: '\f055';
-    font-family: "fontawesome";
-    font-size: 14px;
-    float: right;
-  }
-  
-  button.accordion.is-open:after {
-    content: '\f056';
-  }
-  
+
   button.accordion:hover, button.accordion.is-open {
-    background-color: #ddd;
+    background-color: var(--accodionHover);
   }
   
   .accordion-content {
     background-color: white;
-    border-left: 1px solid whitesmoke;
-    border-right: 1px solid whitesmoke;
+    border-left: 1px solid var(--borderColor);
+    border-right: 1px solid var(--borderColor);
     padding: 0 20px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-in-out;
+    background-color: var(--secondaryColor);
   }
 
 
@@ -385,6 +379,7 @@ button{
   .web-title{
       color: black;
       margin: 0;
+      font-family: 'Russo One', sans-serif;
   }
 
   .web-intro{
@@ -426,6 +421,18 @@ button{
       padding-bottom: 10px;
       background-color: var(--buttonColor);
       border: none;
+  }
+
+  .footer{
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+
+#footer-id p{
+    font-size: 15px;
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;  
   }
 
 @media screen and (max-width: 1200px){
