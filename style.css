@@ -72,9 +72,11 @@ button{
     background-color: var(--mainColor);
     border-bottom:1px solid var(--borderColor);
     overflow: auto;
-    padding-bottom: 50px;
-
 }
+.s1-wrapper{
+    padding-bottom: 50px;
+}
+
 .s2{
     background-color: var(--secondaryColor);
     border-bottom:1px solid var(--borderColor);
@@ -261,25 +263,36 @@ button{
 
 .about-me{
     width: 90%;
-    text-align: center;
-    align-content: center;
-    align-content: space-between;
     position: center;
 }
 
+.octacat h5{
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.octa-btn-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.octacat-img{
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+}
+
 .download{
+    display: inline-block;
+    vertical-align: auto;
     background-color: rgb(251,249,243,0.7);
-    width: 130px;
+    width: 180px;
     height: 55px;
-    margin: 20px;
+    /* margin: 20px; */
     border: 2px solid black;
 }
 .download:hover{
     background-color: #303030;
     color:white;
-    width: 125px;
-    height: 55px;
-    margin: 20px;
     cursor: pointer;
     border: 2px solid white;
 
@@ -317,7 +330,7 @@ button{
   
   button.accordion {
     width: 100%;
-    background-color: var(--mainColor);
+    background-color: var(--secondaryColor);
     border: none;
     outline: none;
     text-align: left;
@@ -436,11 +449,7 @@ button{
   .form-wrapper{
       grid-area: right-column;
   }
-  .octacat{
-      height: 300px;
-      width: 300px;
-      justify-content: center;
-  }
+
 
   /* Contact Form */
   .contact-form{
@@ -508,6 +517,11 @@ button{
     #preview{
         width: 280px;
         justify-content: center;
+    }
+    .octa-btn-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
